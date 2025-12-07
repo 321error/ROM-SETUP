@@ -57,10 +57,6 @@ persist.sys.activity_anim_perf_override=true
 ```
 
 ## OTHER
-**environment setup:**
-```make
-. build/envsetup.sh
-```
 
 **initialize the repo:**
 ```make
@@ -72,7 +68,26 @@ persist.sys.activity_anim_perf_override=true
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 ```
 
+**environment setup:**
+```make
+. build/envsetup.sh
+```
+
+**Lunch BP2A**
+```make
+lunch lineage_marble-bp2a-user
+lunch lineage_garnet-bp2a-user
+lunch lineage_vayu-bp2a-user
+```
+
+**Lunch BP1A**
+```make
+lunch lineage_marble-bp1a-user
+lunch lineage_garnet-bp1a-user
+lunch lineage_vayu-bp1a-user
+```
+
 **DISABLE RBE**
 ```make
-USE_RBE=false mka bacon
+USE_RBE=false mka bacon -j96
 ```
