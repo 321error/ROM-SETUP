@@ -18,7 +18,7 @@ debug.sf.latch_unsignaled=0
 vendor.perf.framepacing.enable=1
 
 
-HWUI
+#HWUI
 ro.hwui.render_ahead=5
 debug.sf.enable_adpf_cpu_hint=true
 debug.hwui.use_hint_manager=true
